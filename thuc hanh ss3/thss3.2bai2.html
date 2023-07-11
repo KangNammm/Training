@@ -1,45 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>thss3.2bai2</title>
     <style>
-       div {
-        text-align: center;
+        html {
+            background-color: rgb(243, 243, 243);
         }
-        ul {
-            list-style: none;
-        } 
+
+        a {
+            text-decoration: none;
+        }
+
+        .tr1 {
+            background-color: white;
+            border-spacing: 3rem;
+        }
+
+        .dv1 {
+            border-left-color: black;
+            border-bottom: 10px;
+        }
+
+        .bt {
+            background-color: rgb(42, 117, 187);
+            border: none;
+            color: white;
+            padding-block: 0.4rem;
+            padding-inline: 0.6rem;
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+
+        .av {
+            background-color: rgb(29, 28, 28);
+            color: white;
+            text-align: center;
+            padding: 1.7rem;
+            font-size: 0.8rem;
+        }
+
+        table {
+            border-spacing: 20px;
+        }
+
+        td {
+            padding: 5px;
+        }
     </style>
 </head>
+
 <body>
-    <p><a href="#">Home</a></p>
-    <div>
-        <ul>
-            <li> <img width="100" src="./nice.png" alt="">
-                San pham 1</li>
-            <input type="submit" value="Them vao gio hang">
-            <li> <img width="100" src="./nice.png" alt="">
-                San pham 2</li>
-            <input type="submit" value="Them vao gio hang">
-            <li> <img width="100" src="./nice.png" alt="">
-                San pham 3</li>
-            <input type="submit" value="Them vao gio hang">
-            <li> <img width="100" src="./nice.png" alt="">
-                San pham 4</li>
-            <input type="submit" value="Them vao gio hang">
-            <li> <img width="100" src="./nice.png" alt="">
-                San pham 5</li>
-            <input type="submit" value="Them vao gio hang">
-            <li> <img width="100" src="./nice.png" alt="">
-                San pham 6</li>
-            <input type="submit" value="Them vao gio hang">
-        </ul>
-        <footer>
-            <h3> Trang web ban hang cua chung toi</h3>
-            <h4> Email: ohyeah@gmail.com</h4>
-        </footer>
-    </div> 
+    <div class="dv1">
+        <h3 style="border-bottom: 1px solid rgb(0, 0, 0) ;"><a href="abc.com">Home</a></h3>
+    </div>
+    <form>
+        <div class="fj1">
+            <div class="fj1">
+                <table id="tb1">
+                    <tr class="tr1">
+                        <td class="td1">
+                            <img width="300" src="../BTSS3/truyen-kiem-hiep-hay.jpg" alt=""><br>
+                            <span><b>Sản phẩm 1</b></span><br>
+                            <span>Giá: 10$</span><br>
+                            <button class="bt">Thêm vào giỏ hàng</button>
+                        </td>
+                        <td class="td1">
+                            <img width="300" src="../BTSS3/truyen-kiem-hiep-hay.jpg" alt=""><br>
+                            <span><b>Sản phẩm 2</b></span><br>
+                            <span>Giá: 15$</span><br>
+                            <button class="bt">Thêm vào giỏ hàng</button>
+                        </td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">
+                            <img width="300" src="../BTSS3/truyen-kiem-hiep-hay.jpg" alt=""><br>
+                            <span><b>Sản phẩm 3</b></span><br>
+                            <span>Giá: 20$</span><br>
+                            <button class="bt">Thêm vào giỏ hàng</button>
+                        </td>
+                        <td class="td1">
+                            <img width="300" src="../BTSS3/truyen-kiem-hiep-hay.jpg" alt=""><br>
+                            <span><b>Sản phẩm 4</b></span><br>
+                            <span>Giá: 25$</span><br>
+                            <button class="bt">Thêm vào giỏ hàng</button>
+                        </td>
+                    </tr>
+                    <tr class="tr1">
+                        <td class="td1">
+                            <img width="300" src="../BTSS3/truyen-kiem-hiep-hay.jpg" alt=""><br>
+                            <span><b>Sản phẩm 5</b></span><br>
+                            <span>Giá: 30$</span><br>
+                            <button class="bt">Thêm vào giỏ hàng</button>
+                        </td>
+                        <td class="td1">
+                            <img width="300" src="../BTSS3/truyen-kiem-hiep-hay.jpg" alt=""><br>
+                            <span><b>Sản phẩm 6</b></span><br>
+                            <span>Giá: 35$</span><br>
+                            <button class="bt">Thêm vào giỏ hàng</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="av">
+                <p>Trang web bán hàng của chúng tôi</p>
+                <p>Emai: ohyeah@gmail.com</p>
+            </div>
+        </div>
+    </form>
 </body>
+
 </html>
