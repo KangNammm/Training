@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btss3.9.3</title>
+    <style>
+        .abc1 {
+    display: flex;
+}
+
+img {
+    border: 1px solid black;
+    margin: 0.2rem;
+    width: 5rem;
+}
+
+.btx {
+    border: 0;
+    border-radius: 25px;
+    background-color: rgb(76, 76, 255);
+    color: white;
+    padding-inline: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.cona {
+    display: flex;
+    gap: 0 14px;
+    padding: 1rem;
+}
+
+.dau {
+    margin-left: 25rem;
+}
+
+.cardnumber{
+padding: 10px;
+border-radius: 5px;
+display: flex;
+width: 420px;
+outline: none;
+border: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+.cardnumber:focus{
+    outline: 1px solid rgb(0, 17, 255);
+}
+.pw{
+    padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        width: 305px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.253);
+}
+.pw:focus{
+    outline: 1px solid rgb(0, 17, 255);
+}
+.dt{
+    padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        width: 80px;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.253);
+}
+.dt:focus{
+    outline: 1px solid rgb(0, 17, 255);
+}
+.ke{
+    padding: 1rem;
+}
+.bottom{
+    padding: 1rem;
+}
+.top{
+    padding: 1rem;
+}
+    </style>
+</head>
+
+<body>
+    <div class="dau">
+        <div>
+            <div class="top">
+            <h1>Select Card</h1>
+            <div class="abc1">
+                <div>
+                    <img src="./ATM.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./ATM.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./ATM.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./ATM.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./ATM.jpg" alt="">
+                </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="ke">
+                <span><b>Card Number</b></span>
+                <br>
+                <br>
+                <input type="number" name="cardnumber" class="cardnumber">
+            </div>
+            <div class="cona">
+                <div>
+                    <span><b>Expity date</b></span>
+                    <br>
+                    <input type="date" name="" class="dt">
+                </div>
+                <div>
+                    <span><b>CVC/CVV</b></span>
+                    <br>
+                    <input type="password" class="pw"></td>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="bottom">
+                <button class="btx">Save</button>
+            </div>
+        </div>
+</body>
+
+</html>
