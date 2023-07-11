@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thss3.2bai1</title>
+    <style>
+
+        header {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+           background-color: black;
+           color: white; 
+        }
+        nav {
+           color: white;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        li {
+            display: inline-block;
+            margin: 10px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            color: aqua;
+        }
+        h3 {
+           text-align: center; 
+        }
+        form {
+            margin: 20px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        label, input[text=""],input[type="date"], select,option {
+            justify-content: space-between;
+        }
+        .form-scope {
+            display: flex;
+            justify-content: center;
+        }
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            text-align: left;
+            margin-right: 500px;
+        }
+
+        
+    </style>
+</head>
+<body>
+   <header>
+    <h1> Hotel Search</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+       </nav>
+   </header>
+   
+     <h3> Find the Perfect Hotel for You</h3>
+    <div class="form-scope">
+        <form action="">
+            <label for="destination">Destination:</label>
+            <input type="text" placeholder="enter">
+            <label for="check">Check-in:</label>
+            <input type="date">
+            <label for="checkout">Check-Out:</label>
+            <input type="date">
+            <label for="guests">Guests:</label>
+            <select name="" id="">
+               <option value="guests">1</option>
+            </select>
+            <input type="submit" value="Search">
+            </form>
+    </div>
+</body>
+</html>
