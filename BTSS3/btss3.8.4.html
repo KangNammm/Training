@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>btss3.8.4</title>
     <style>
-        form {
+        body {
+            background-color: white;
             text-align: center;
-
         }
 
-        div {
-            text-align: center;
+        .div {
+            border: 15;
+            border-color: rgb(0, 110, 206);
+            margin: 500px;
         }
     </style>
 </head>
 
 <body>
-    <form action="">
-        <div>
+    <form style="background-color: white; border-radius: 4px; box-shadow: 0px 0px 10px 1px #888888" action="">
+        <div style="padding: 10px; margin: 10px;">
             <h1> Tuyển dụng</h1>
             <label for="name"> Ho va ten:</label><br>
             <input type="text"><br>
@@ -30,8 +32,8 @@
             <label for="cv">CV:</label><br>
             <input type="file"><br>
             <label for="mess">Tin nhan:</label><br>
-            <textarea name="mess" id="mess" cols="20" rows="10"></textarea><br>
-            <input type="submit" value="Gui"><br>
+            <textarea name="mess" id="mess" cols="30" rows="5"></textarea><br>
+            <input style="background-color: black; color: aliceblue; border-radius: 4px;" type="submit" value="Gui"><br>
         </div>
     </form>
 </body>
