@@ -1,0 +1,55 @@
+body {
+    background-color: bisque;
+
+}
+
+.box {
+    border: 5px solid aqua;
+
+    width: 24rem;
+    height: 23rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.411)), url(../BTSS4/sharigan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 6px;
+}
+
+button {
+    border: none;
+    background-color: rgb(207, 43, 43);
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 5px;
+    margin: 0.7rem 0rem 0rem 0.7rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.3rem 0rem 0rem 18rem;
+}
+
+.icon1 {
+    font-size: 1.2rem;
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    background-color: rgb(161, 31, 31);
+    border-radius: 10px;
+}
+
+.icon2 {
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+p,
+h3 {
+    margin: 0px;
+}
+
+.title {
+    color: #fff;
+    margin: 2rem 0rem 0rem 2rem;
+}

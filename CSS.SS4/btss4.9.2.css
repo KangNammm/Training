@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(200, 179, 127);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    background-color: rgb(162, 162, 187);
+    width: 100px;
+    height: 400px;
+    transform: translateX(0px);
+    transition: all 0.4s ease-in-out;
+}
+
+i:active+ul {
+    transform: translate(-90px);
+}
+.box{
+    background-color: rgb(116, 83, 95);
+    width: 500px;
+}

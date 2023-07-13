@@ -1,0 +1,16 @@
+.background{
+    margin: 0px;
+    width: 40rem;
+    height: 50rem;
+    background: linear-gradient( rgba(168, 156, 156, 0.595), rgba(145, 66, 185, 0.411)), url(../BTSS4/rikkei.png) no-repeat;
+    border-radius: 8px;
+}
+.maincontent{
+    margin-left: 4rem;
+    height: 156%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #fff;
+}

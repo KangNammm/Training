@@ -1,0 +1,29 @@
+.icon {
+    width: 143rem;
+    height: 100rem;
+    background: url(../BTSS3/truyen-kiem-hiep-hay.jpg) no-repeat;
+}
+
+.status {
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    content: 700px;
+}
+
+.title {
+    margin-top: 9.6rem;
+    display: flex;
+    align-items: center;
+    width: 50rem;
+    background-color: rgba(0, 0, 0, 0.199);
+    color: #fff;
+    font-size: 33px;
+}
+h2{
+    margin: -18rem 30rem 30rem 20rem;
+}
+.box {
+    width: 20rem;
+    height: 20rem;
+}

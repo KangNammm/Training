@@ -1,0 +1,16 @@
+button {
+    border: 2px solid red;
+    border-right: 4px dotted blue;
+    border-bottom: 6px double green;
+    border-left: 8px groove purple;
+}
+
+.img {
+    width: 800px;
+    height: 500px;
+    background: url(../BTSS3/truyen-kiem-hiep-hay.jpg) no-repeat;
+}
+
+.img {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 4);
+}
