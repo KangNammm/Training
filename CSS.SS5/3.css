@@ -1,0 +1,29 @@
+body{
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+}
+.box{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 243, 242);
+    margin-bottom: 20px;
+}
+.item>p{
+    margin: 8px;
+}
+button{
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    background-color: rgb(163, 94, 227);
+    color: aliceblue;
+}
