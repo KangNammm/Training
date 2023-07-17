@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(245, 243, 241);
+}
+header{
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+header>h2{
+    width: 500px;
+    height: 70px;
+    background-color: rgba(225, 161, 12, 0.389);
+    position: absolute;
+    top: 15rem;
+    left: 14rem;
+    font-size: 23px;
+    text-align: left;
+}
+.list-reasons{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.reasons{
+    border-top: 4px solid rgb(224, 206, 43);
+}
+.reasons>h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+.pi{
+    font-size: 17px;
+    font-weight: 50;
+    word-wrap: inherit;
+}
+.reasons>img{
+    margin: 50px;
+    padding: 0;
+}
+.image{
+    margin-top: 0;
+}
