@@ -1,0 +1,32 @@
+@media only screen and (max-width: 390px) {
+    body {
+        background-color: #090707;
+        width: 390px;
+        height: auto;
+    }
+
+    .name {
+        margin-left: 10px;
+        color: aliceblue;
+        align-items: center;
+    }
+
+    .name>input {
+        width: 100px;
+        height: 20px;
+    }
+
+    .elippsis {
+        opacity: 0;
+    }
+
+    main {
+        margin-left: 10px;
+        height: auto;
+    }
+
+    footer {
+        margin-left: 10px;
+        height: auto;
+    }
+}

@@ -1,0 +1,94 @@
+body {
+    align-items: center;
+}
+
+.name {
+    width: 1200px;
+    margin-left: 6.5rem;
+    background-color: rgb(228, 106, 57);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: aliceblue;
+    align-items: center;
+}
+
+.name>input {
+    width: 400px;
+    height: 30px;
+}
+
+.elippsis {
+    margin-top: 60px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    color: rgb(207, 205, 205);
+    gap: 7px;
+}
+
+main {
+    border-bottom: 2px solid red;
+    width: 1200px;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 6.5rem;
+    background-color: rgb(207, 201, 201);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.image {
+    margin-top: 10px;
+    margin-left: 92px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.list-product {
+    background-color: aliceblue;
+    width: 150px;
+    height: 250px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.item {
+    background-color: rgb(245, 248, 250);
+    width: 150px;
+    height: 350px;
+    text-align: center;
+}
+
+.price {
+    color: red;
+}
+
+.address {
+    font-weight: 10px;
+    font-size: 10px;
+}
+
+footer {
+    background-color: rgb(207, 204, 204);
+    border-bottom: 2px solid black;
+    width: 1200px;
+    margin-left: 6.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.real-name {
+    color: red;
+}
