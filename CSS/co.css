@@ -1,0 +1,344 @@
+* {
+    color: white;
+}
+
+body {
+    width: 1440px;
+    height: auto;
+    background-color: rgb(16, 15, 15);
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    margin-left: 600px;
+}
+a{
+    text-decoration: none;
+}
+.header1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nut1 {
+    border: 1.5px solid #fff;
+    border-radius: 5px;
+    width: 204px;
+    height: 50px;
+    flex-shrink: 0;
+    background-color: #3333;
+}
+
+.main1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.hai>h1 {
+    width: 914px;
+    color: #FFF;
+    text-align: center;
+    font-family: Aeonik;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1>span {
+    color: #3775ED;
+    font-family: Aeonik;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hai>p {
+    color: #E5E5E5;
+    text-align: center;
+    font-family: Aeonik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nut2,
+.nut3 {
+    margin-bottom: 30px;
+}
+
+.nut2 {
+    width: 204px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    background: #3775ED;
+}
+
+.nut3 {
+    width: 204px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1.5px solid #FFF;
+    background-color: rgb(15, 14, 14);
+    margin-left: 23px;
+}
+
+.anh {
+    width: 1200px;
+    height: 514px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.truoc {
+    margin-top: 172px;
+    font-family: Aeonik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sau {
+    font-family: Aeonik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.anhh {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.box {
+    background-color: #1A1919;
+    margin-left: 7.7rem;
+    margin-top: 21px;
+    width: 1200px;
+    height: 347px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.box>h1 {
+    margin-top: 112px;
+    font-family: Aeonik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box>p {
+    width: 637px;
+    text-align: center;
+    font-family: Aeonik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.log1 {
+    position: absolute;
+    top: 33px;
+    bottom: 0;
+    left: 96px;
+    right: 0;
+}
+
+.log2 {
+    position: absolute;
+    top: 187px;
+    bottom: 0;
+    left: 36px;
+    right: 0;
+}
+
+.log3 {
+    position: absolute;
+    top: 253.27px;
+    bottom: 40px;
+    left: 217.27px;
+    right: 0;
+}
+
+.log4 {
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    left: 609px;
+    right: 0;
+}
+
+.log5 {
+    position: absolute;
+    top: 254px;
+    bottom: 0;
+    left: 821px;
+    right: 0;
+}
+
+.log6 {
+    position: absolute;
+    top: 36px;
+    bottom: 0;
+    left: 934px;
+    right: 0;
+}
+
+.log7 {
+    position: absolute;
+    top: 93px;
+    bottom: 0;
+    left: 1104px;
+    right: 0;
+}
+
+.log8 {
+    position: absolute;
+    top: 232px;
+    bottom: 0;
+    left: 1049px;
+    right: 0;
+}
+
+.header2 {
+    margin-left: 120px;
+}
+
+.header2>h1 {
+    font-family: Aeonik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header2>p {
+    font-family: Aeonik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.main2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 77px;
+}
+
+.footer2 {
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+.header3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header3>h1 {
+    font-family: Aeonik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header3>p {
+    font-family: Aeonik;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.last1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 27px 30px;
+    margin-top: 72px;
+}
+
+.last2 {
+    margin-top: 157px;
+    width: 1200px;
+    height: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.last3 {
+    margin-top: 207px;
+    width: 1200px;
+    height: 291px;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.footer3 {
+    margin-top: 129px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.end {
+    display: grid;
+    grid-template-columns: 19px 19px 19px 19px;
+    gap: 27px;
+}
+
+.p1 {
+    margin-left: 132px;
+    margin-bottom: 66px;
+    font-family: Aeonik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.p2 {
+    margin-right: 108px;
+    margin-bottom: 66px;
+    font-family: Aeonik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
