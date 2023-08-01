@@ -81,6 +81,7 @@
 //     alert(`Gia tri ${num} khong ton tai trong mang`);
 // }
 
+
 // let arr = [];
 // for (i = 0; i < 5; i++) {
 //     let chuoi = +prompt(` Hay nhap so nguyen theo thu tu ${i + 1}`)
