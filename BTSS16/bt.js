@@ -312,18 +312,137 @@
 //
 
 
-//6. Viết function trả ra giá trị lớn nhất trong một mảng số
-let arrInt = [36,22,58,44,79];
-// arrInt.sort(function(b,a){
-//     return a-b
+// //6. Viết function trả ra giá trị lớn nhất trong một mảng số
+// let arrInt = [36,22,58,44,79];
+// // arrInt.sort(function(b,a){
+// //     return a-b
+// // })
+// // console.log("max =",arrInt[0]);
+
+// let max = arrInt.reduce(function(value,index){
+//     return value>index? value:index;
 // })
-// console.log("max =",arrInt[0]);
+// console.log(max);
 
-let max = arrInt.reduce(function(value,index){
-    return value>index? value:index;
-})
-console.log(max);
+//
 
 
+
+// // 7. Viết function kiểm tra số chẵn - lẻ, nguyên tố, hoàn hảo
+// function checkNumber(number) {
+//     if (number % 2 == 0) {
+//         if (isPrimeNumber(number)) {
+//             console.log(number + ": so chan va so nguyen to");
+//         } else if (isPerfectNumber(number)) {
+//             (isPerfectNumber(6));
+//             console.log(number + ": so chan va so hoan hao");
+//         } else {
+//             console.log(number + ": so chan");
+//         }
+//     } else {
+//         if (isPrimeNumber(number)) {
+//             console.log(number + ": so le va so nguyen to");
+//         } else if (isPerfectNumber(number)) {
+//             (isPerfectNumber(6));
+//             console.log(number + ": so le va so hoan hao");
+//         } else {
+//             console.log(number + ": so le");
+//         }
+//     }
+// }
+// function isPrimeNumber(number) {
+//     let check = true;
+//     for (let i = 2; i <= Math.sqrt(number); i++) {
+//         if (number % i === 0) {
+//             return false;
+//         }
+//     }
+//     if (check) {
+//         // console.log(number + ": so nguyen to");
+//         return true;
+//     } else {
+//         // console.log(number + ": khong phai so nguyen to");
+//         return false;
+//     }
+// }
+
+// function isPerfectNumber(number) {
+//     let sum = 0;
+//     for (let j = 0; j <= number / 2; j++) {
+//         if (number % j == 0) {
+//             sum += j;
+//         }
+//     }
+//     if (sum == number) {
+//         // console.log(number + ": so hoan hao");
+//         return true
+//     } else {
+//         // console.log(number + ": khong phai so hoan hao");
+//         return false
+//     }
+// }
+
+// checkNumber(6)
+// checkNumber(11)
+// checkNumber(15)
+// checkNumber(17)
+
+
+// for (const value of arr) {
+//     if (isNguyenTo(value)) {
+//         console.log(value, " la so nguyen to");
+//     }
+// }
+
+
+
+//
+
+
+
+
+// // 8. Viết function trả ra trung bình cộng của một mảng số
+// function averageOfAArray(array) {
+//     let sum = 0;
+//     for (const value of array) {
+//         sum += value;
+//     } return sum / array.length;
+// }
+// let array1 = [1, 2, 3, 4, 5, 6, 7, 8]
+// console.log(averageOfAArray(array1));
+
+
+
+
+//
+
+
+
+
+// 9. Nhập vào một vào một số n, in ra n số nguyên tố tăng dần
+// let n = 10; //+prompt("Nhap vao 1 so n bat ky");
+// function printPrimeNumber(n) {
+//     let count = 0;
+//     let number = 2
+//     while (true) {
+//         if (count == n) {
+//             break;
+//         }
+//         let check = true;
+//         for (let i = 2; i < number; i++) {
+//             if (number % i == 0) {
+//                 check = false;
+//                 break;
+//             }
+//         }
+
+//         if (check) {    
+//             console.log(number);
+//             count++;
+//         }
+//         number++;
+//     }
+// }
+// printPrimeNumber(10)
 
 
