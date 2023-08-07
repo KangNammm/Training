@@ -1,0 +1,29 @@
+.intro{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 2rem;
+}
+#image{
+    width: 25rem;
+    margin: 0 auto;
+}
+#gallery{
+    width: 100%;
+}
+#thumbs{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.thumb { 
+    width: 3.7rem; 
+    height: 3.7rem; 
+    object-fit: cover; 
+    margin-right: 0.5rem; 
+    cursor: pointer;
+    }

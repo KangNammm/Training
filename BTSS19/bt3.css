@@ -1,0 +1,100 @@
+/* #box {
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    height: 10rem;
+    position: absolute;
+    display: none;
+    top: 30%;
+    left: 30%;
+    z-index: 9;
+}
+
+#box>p {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    z-index: 9;
+}
+
+#box>button {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    z-index: 9;
+}
+
+body {
+    position: relative;
+    height: 40rem;
+}
+
+#color {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.336);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+} */
+
+
+/* // */
+
+
+
+/* 3 */
+/* #box>div>div {
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid black;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 2rem;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+
+}
+
+#box>div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#red {
+    background-color: rgb(255, 216, 216);
+}
+
+#blue {
+    background-color: rgb(192, 192, 255);
+}
+
+#yellow {
+    background-color: rgb(250, 255, 206);
+}
+
+body {
+    height: 43rem;
+    position: relative;
+} */
+
+
+/*  */
+
+
+/* 4 */
+#btn2 {
+    color: #fff;
+    background-color: rgb(34, 34, 34);
+    border: 0.5px solid #fff;
+    border-radius: 2px;
+    padding: 0.125rem 0.4rem;
+    display: none;
+}
