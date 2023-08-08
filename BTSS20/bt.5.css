@@ -1,0 +1,37 @@
+body{
+    align-items: center;
+}
+*{
+    
+    margin:0 auto;
+    background-color: black;
+}
+.word{
+    width:60%;
+    margin:0 auto;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.display textarea{
+    width:50%;
+    border: 2px solid white;
+    padding: 13rem;
+    text-align: center;
+    border-radius:6px;
+    background-color: rgb(26, 24, 24);
+    font-size: 3rem;
+    color: white;
+}
+button{
+    width: 5rem;
+    height: 3rem;
+    margin-top: 1.5rem;
+    border-radius: 30%;
+    background-color: rgb(34, 31, 31);
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+button:hover{
+    background-color: rgb(93, 170, 145);
+}
