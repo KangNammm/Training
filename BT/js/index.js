@@ -1,15 +1,15 @@
 const data = [
-    { id: 1, name: "Apple", price: 12, count: 23, img: "avatar-2.jpg" },
-    { id: 2, name: "Orange", price: 24, count: 10, img: "avatar-3.jpg" },
-    { id: 3, name: "Mango", price: 45, count: 31, img: "avatar-5.jpg" },
+    { id: 1, name: "Jun Vu", age: 25, img: "jun2.jpg" },
+    { id: 2, name: "Yoonsul", age: 21, img: "yoonsul4.jpg" },
+    { id: 3, name: "Arian Greeze", age: 23, img: "yoonsul2.webp" },
+    { id: 4, name: "XiaoZhao Ling", age: 18, img: "yoonsul1.jpg" },
 ] // mảng dữ liệu có sẵn
 
-let idGlobal = 4 // biến tự tăng id
-let indexUpdateGlobal = null // biến lưu xem đang sửa sản phẩm ở vị trí nào
+let idGlobal = 5 // biến tự tăng id
+let indexUpdateGlobal = null // biến lưu xem đang sửa người ở vị trí nào
 
 const inputName = document.getElementById("name")   // ô nhập tên
-const inputPrice = document.getElementById("price") // ô nhập giá
-const inputCount = document.getElementById("count") // ô nhập số lượng
+const inputAge = document.getElementById("age") // ô nhập tuổi
 const inputImg = document.getElementById("img")     // ô nhập ảnh
 
 // hàm vẽ bảng dữ liệu
@@ -22,15 +22,14 @@ function drawTable() {
     <tr>
         <td>${e.id}</td>
         <td>${e.name}</td>
-        <td>${e.price} <b>$</b> </td>
-        <td>${e.count}</td>
+        <td>${e.age}</td>
         <td>
             <img src="./img/${e.img}" alt="img">
         </td>
         <td>
             <div class="action_col">
                 <button class="btn btn_sua" onclick="toggleForm(${e.id})">Edit</button>
-                <button class="btn btn_xoa" onclick="deleteProduct(${e.id})">Delete</button>
+                <button class="btn btn_xoa" onclick="deletePerson(${e.id})">Delete</button>
             </div>
         </td>
     </tr>
@@ -54,8 +53,7 @@ function toggleForm(id) {
         indexUpdateGlobal = indexUpdate
         // gán gia trị của từng trường vào từng ô input tương ứng, hình ảnh thì tạm thời chưa làm
         inputName.value = data[indexUpdate].name
-        inputPrice.value = data[indexUpdate].price
-        inputCount.value = data[indexUpdate].count
+        inputAge.value = data[indexUpdate].age
     } else { // nếu không có id thì làm sạch biến global và xóa trắng form để mỗi lần mở form ra đều mới tinh, ko bị dính data đang nhập dở lần trước
         indexUpdateGlobal = null
         document.getElementById("form").reset()
@@ -67,12 +65,11 @@ document.getElementById("form").addEventListener("submit", function (e) {
     // tránh việc load lại trang khi submit, vì load lại trang là như bấm open liveserver, mất hết dữ liệu đang làm việc
     e.preventDefault()
 
-    // nếu có indexUpdateGlobal thì submit là để cập nhật lại một sản phẩm ở vị trí indexUpdateGlobal
+    // nếu có indexUpdateGlobal thì submit là để cập nhật lại thông tin ở vị trí indexUpdateGlobal
     if (indexUpdateGlobal != null) {
-        // sửa từng trường của sản phẩm bằng các biến mà người dùng nhập lại
+        // sửa từng trường của nhân viên bằng các biến mà người dùng nhập lại
         data[indexUpdateGlobal].name = inputName.value
-        data[indexUpdateGlobal].price = inputPrice.value
-        data[indexUpdateGlobal].count = inputCount.value
+        data[indexUpdateGlobal].age = input.value
         // riêng cái ảnh vì ko đẩy lên được lúc click nút edit nên phải check xem ng dùng có chọn ảnh mới ko
         // nếu có thì gán ảnh mới cho trường img
         // nếu ko thì thôi
@@ -94,23 +91,22 @@ document.getElementById("form").addEventListener("submit", function (e) {
         return
     }
 
-    // nếu ko có indexUpdateGlobal thì submit là để thêm mới sản phẩm
+    // nếu ko có indexUpdateGlobal thì submit là để thêm mới nhân viên
     // lấy link ảnh
     let img = inputImg.value
     img = img.split("\\")
     img = img[img.length - 1]
-    // tạo object sản phẩm mới
-    const product = {
+    // tạo object nhân viên mới
+    const person = {
         id: idGlobal,
         name: inputName.value,
-        price: inputPrice.value,
-        count: inputCount.value,
+        age: inputAge.value,
         img
     }
-    // vì đã gán idGlobal mới nhất cho sản phẩm phía trên nên tăng idGlobal lên 1 để cho lần làm việc tiếp theo
+    // vì đã gán idGlobal mới nhất cho nhân viên phía trên nên tăng idGlobal lên 1 để cho lần làm việc tiếp theo
     idGlobal++
-    // thêm sản phẩm vào mảng data
-    data.push(product)
+    // thêm người vào mảng data
+    data.push(person)
     // xóa các trường trong form
     this.reset()
     // ẩn form
@@ -120,7 +116,7 @@ document.getElementById("form").addEventListener("submit", function (e) {
 })
 
 // xóa phần tử được chọn theo id
-function deleteProduct(id) {
+function deletePerson(id) {
     // tìm vị trí cần xóa
     const indexDelete = data.findIndex(e => e.id == id)
     // hỏi xem ng dùng có muốn xóa
