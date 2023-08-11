@@ -1,5 +1,4 @@
 let month = +prompt(" Xin moi nhap thang");
-let year = +prompt(" Xin moi nhap nam");
 switch (month) {
     case 1:
         document.write(" Thang 1 co 31 ngay")
