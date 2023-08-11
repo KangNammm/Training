@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon02</title>
+    <link rel="stylesheet" href="./hackathon.css">
+</head>
+
+<body>
+    <form id="student-form">
+        <div>
+            <h2>Thông tin học sinh</h2>
+            <table>
+                <tr>
+                    <td>Họ và tên:</td>
+                    <td><input type="text" id="name" required></td>
+                    <td><span id="name"></span></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" required></td>
+                    <td><span id="email"></span></td>
+                </tr>
+                <tr>
+                    <td>Số điện thoại <br>
+                        (Phải nhập đúng <br> 
+                        vùng Việt Nam 
+                         <br> và đủ 10 số.):</td>
+                    <td><input type="number" id="phone" required></td>
+                    <td><span id="phone"></span></td>
+                </tr>
+                <tr>
+                    <td>Quê quán:</td>
+                    <td><input type="text" id="hometown" required></td>
+                    <td><span id="hometown"></span></td>
+                </tr>
+                <tr>
+                    <td>gender:</td>
+                    <td>
+                        <select id="gender">
+                            <option value="Male" id="Male">Nam</option>
+                            <option value="Female" id="Female">Nữ</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button type="button" id="save" onclick="addStudent()">Lưu lại</button></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+    <h2>Danh sách học sinh</h2>
+
+    <input type="text" id="search">
+    <button type="button" id="">Search</button>
+    <table id="student-table">
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Quê quán</th>
+                <th>Gender</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="student-body">
+        </tbody>
+    </table>
+    <script src="./hackathon.js"></script>
+</body>
+
+</html>
