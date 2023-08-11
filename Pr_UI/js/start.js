@@ -1,3 +1,15 @@
+// localStorage.setItem("users", JSON.stringify([
+//     {
+//         id: 1,
+//         firstName: "nguyen",
+//         lastName: "minh",
+//         userName: "minhnguyen245",
+//         email: "minhnguyen98@gmail.com",
+//         password: "12345A",
+//         avatar: "avatar.jpg",
+//         role: "user"
+//     }
+// ]))
 
 // ===============   Login Form   ==================
 const userNameLog = document.getElementById("username-log")
