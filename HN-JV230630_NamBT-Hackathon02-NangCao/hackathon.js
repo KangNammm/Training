@@ -122,7 +122,7 @@ function displayStudents(list) {
         tr.appendChild(tdHometown);
 
         const tdGender = document.createElement("td");
-        tdGender.innerHTML = `${student.genderrr}`;
+        tdGender.innerHTML = `${student.gender}`;
         tr.appendChild(tdGender);
 
         const tdEdit = document.createElement("td");
