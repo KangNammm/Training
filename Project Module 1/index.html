@@ -20,12 +20,12 @@
             <div class="content-nav dropdown-center">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="http://127.0.0.1:5500/Project%20Module%201/user/productUser.html">Products</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Introduce</a></li>
                     <li id="cha" class="nav-item">
                         <a id="dropdown_menu" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Brand Car
+                          Categories
                         </a>
                         <ul id="hidden" class="dropdown-menu hiden con">
                           <li><a class="dropdown-item" href="#">Mercedes-Benz</a></li>
@@ -38,7 +38,7 @@
                 </ul>
                 <form>
                     <input type="text" name="search" placeholder="Search for products..." />
-                    <button type="submit"><i class="fa fa-search " aria-hidden="true"></i></button>
+                    <button type="button"><i class="fa fa-search " aria-hidden="true"></i></button>
                 </form>
             </div>
             <!-- The Modal -->
@@ -74,7 +74,7 @@
 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary close-footer">Close</button>
-                            <button type="button" class="btn btn-primary order">Payment</button>
+                            <button id="order" type="button" class="btn btn-primary" onclick="handleLogInForPayMent()">Payment</button>
                         </div>
                     </div>
                 </div>
@@ -177,8 +177,8 @@
 
         <div class="products">
             
-            <ul>
-                <li class="main-product">
+            <ul id="list_product">
+                <!-- <li class="main-product">
                     <div class="img-product">
                         <img class="img-prd"
                             src="./img/Mercedes-Benz SLS AMG Matt Limited Edition.jpg"
@@ -193,183 +193,8 @@
                             <button type="button" class="btn btn-cart">Add to cart</button>
                         </div>
                     </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/mercedes-maybach-s-class.webp"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">Mercedes-Benz Maybach S Class</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">2300$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/Rolls Royce Ghost.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">Rolls Royce Ghost</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">7600$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/BMW_Latest_Luxury-Cars-2012_MyClipta_1.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">BMW Latest Luxury Car Models</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">4000$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/2014 Mercedes-Benz SLS AMG Coupe Electric Drive.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">Mercedes-Benz SLS AMG Coupe Electric</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">2600$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/2015 BMW 3.0 CSL Hommage R Concept.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">BMW 3.0 CSL Hommage R Concept</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">2700$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/Bmw M8 License Plate.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">BMW M8 License Plate</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">2100$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/New Rolls-Royce Phantom 2017.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">New Rolls-Royce Phantom 2017</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">3300$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/Mercedes-Benz-GLC43.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">Mercedes-Benz-GLC43</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">2500$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/Mercedes AMG S63 Cabriolet Rental.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">Mercedes AMG S63 Cabriolet Rental</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">2200$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/Mercedes-Benz EQS AMG.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">Mercedes-Benz EQS AMG</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">4800$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="main-product">
-                    <div class="img-product">
-                        <img class="img-prd"
-                            src="./img/BMW i8 Hybrydowy.jpg"
-                            alt="">
-                    </div>
-                    <div class="content-product">
-                        <h3 class="content-product-h3">BMW i8 Hybrydowy</h3>
-                        <div class="content-product-deltals">
-                            <div class="price">
-                                <span class="money">4300$</span>
-                            </div>
-                            <button type="button" class="btn btn-cart">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
+                </li> -->
+                
             </ul>
         </div>
 

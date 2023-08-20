@@ -9,11 +9,12 @@ const handleLogIn = ()=>{
         return; 
     }
     let usernameLogin = checkLogin (loginUsername, loginPass);
+    console.log(usernameLogin);
     if(usernameLogin== null){
         document.getElementById("error").innerText = "Incorrect email or password, please re-enter.";
         return;
     }
-    sessionStorage.setItem("usernameLogin", JSON.stringify(usernameLogin));
+    localStorage.setItem("usernameLogin", JSON.stringify(usernameLogin));
 
     if(usernameLogin.role ==="ADMIN"){
         location.href= "http://127.0.0.1:5500/Project%20Module%201/admin/index.html";
@@ -23,6 +24,7 @@ const handleLogIn = ()=>{
 }
 
 const checkLogin = (username, password)=>{
+
     let check = JSON.parse(localStorage.getItem('users'));
     for (let i = 0; i < check.length; i++) {
         const user = check[i];

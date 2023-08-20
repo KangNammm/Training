@@ -8,7 +8,7 @@ let listRole = [
 
 // tim kiem ten danh muc theo id danh muc
 const getRoleNameByRoleId = (id)=>{
-    let kq = listRole.find((cat)=>cat.role_id==id)
+    let kq = listRole.find((cat)=>cat.role===id)
         if (kq){
             return kq.role;
     }
@@ -31,7 +31,7 @@ let str = "";
 for (let i = 0; i < listRole.length; i++) {
     const element = listRole[i];{
         const element = listRole[i];
-    str += `<option value="${element.role_id}">${element.name}</option>`;
+    str += `<option value="${element.name}">${element.name}</option>`;
     }
 }
 
@@ -65,11 +65,10 @@ function handleCreateNewAccout() {
     // lay du lieu
     let user_id = getNewId();
     let username = document.getElementById("username").value;
-    console.log(username);
     let image = document.getElementById("user_image").value;
     let full_name = document.getElementById("fullname").value;
     let email = document.getElementById("email").value;
-    let role_id = document.getElementById("role").value;
+    let role = document.getElementById("role").value;
     let error = "";
 
     if(username.trim()==""){
@@ -94,7 +93,8 @@ function handleCreateNewAccout() {
         image,
         full_name,
         email,
-        role_id
+        role,
+        cart: []
     }
 
     users = [...users, newUser];
