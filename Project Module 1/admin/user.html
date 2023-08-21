@@ -227,7 +227,7 @@
 
                         <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
             
-                            <span class="text-dark">K Car</span>
+                            <span id="login" class="text-dark"></span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="#"><i class="align-middle me-1"
@@ -255,9 +255,9 @@
                         <h3 class="card-title">Demo User Table</h3>
                         <nav class="navbar navbar-expand-lg bg-light">
                             <div class="container-fluid">
-                                <a class="navbar-brand" href="#">
+                                <!-- <a class="navbar-brand" href="#">
                                     <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#addModal">+ Create new Account</button>
-                                </a>
+                                </a> -->
                                 <form class="d-flex" role="search">
                                     <input class="form-control me-2 fst-italic" type="search"
                                            placeholder="Enter user's name... "
@@ -350,96 +350,6 @@
           <button type="button" class="btn btn-primary" onclick="handleCreateNewAccout()">Create</button>
         </div>
       </div>
-    <!-- </div>
-  </div>
-<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Product</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-                <label for="product_id" class="form-label">Product ID</label>
-                <input type="text" class="form-control" id="product_id" readonly>
-              </div>
-            <div class="mb-3">
-                <label for="product_name_edit" class="form-label">Product Name</label>
-                <input type="text" class="form-control" id="product_name_edit">
-              </div>
-              <div class="mb-3">
-                <div id="old_image">
-                    <img width="120" height="120" style="object-fit:cover" src="" alt="">
-                </div>
-                <label for="product_image_edit" class="form-label">Product Image</label>
-                <input type="file" class="form-control" id="product_image_edit">
-                <progress class="d-block" value="0" max="100" id="uploader_edit">0%</progress>
-                <div id="list_images_edit"></div>
-              </div>
-              <div class="mb-3">
-                <label for="description_edit" class="form-label">Descriptions</label>
-                <input type="text" class="form-control" id="product_name">
-              </div>
-              <div class="mb-3">
-                <label for="product_price_edit" class="form-label">Product Price</label>
-                <input type="number" class="form-control" id="product_price_edit">
-              </div>
-              <div class="mb-3">
-                <label for="stock_edit" class="form-label">Stock</label>
-                <input type="number" class="form-control" id="stock_edit">
-              </div>
-              <div class="mb-3">
-                <label for="category_edit" class="form-label">Category</label>
-                <select  id="category_edit">
-                   
-                </select>
-              </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="handleUpdateProduct()">UPDATE</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-        </main>
-
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <div class="row text-muted">
-                    <div class="col-6 text-start">
-                        <p class="mb-0">
-                            <a class="text-muted" href="" target="_blank"><strong><i class="fa-solid fa-car-side"></i>K</strong></a>
-                            - <a class="text-muted" href="" target="_blank"><strong>Bootstrap Admin
-                            Template</strong></a> &copy;
-                        </p>
-                    </div>
-                    <div class="col-6 text-end">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a class="text-muted" href="#" target="_blank">Support</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-muted" href="#" target="_blank">Help Center</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-muted" href="#" target="_blank">Privacy</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-muted" href="#" target="_blank">Terms</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div> -->
-<!-- </div> -->
 
 <script src="js/app.js"></script>
 
@@ -664,6 +574,7 @@
         });
     });
 </script>
+<script src="../user/js/logout.js"></script>
 <script src="./js/user.js"></script>
 </body>
 

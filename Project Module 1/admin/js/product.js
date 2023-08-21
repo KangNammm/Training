@@ -1,20 +1,13 @@
 let products = JSON.parse(localStorage.getItem("products"))||[];
 // lay ra danh sach danh muc
-let categories = [
-    {category_id: 1, name:"Mercedes-Benz"},
-    {category_id: 2, name:"BMW"},
-    {category_id: 3, name:"Rolls Royce"},
-    {category_id: 4, name:"Koenigsegg"},
-    {category_id: 5, name:"Lamborghini"},
-    {category_id: 6, name:"Bugatti"}
-]
+let categories = JSON.parse(localStorage.getItem("categories"))||[];
 
 // tim kiem ten danh muc theo id danh muc
 const getCategoryNameByCategoryId=(id)=>{
     let kq = categories.find((cat)=>cat.category_id==id)
     if(kq) {
 
-        return kq.name;
+        return kq.category;
     }
 };
 
