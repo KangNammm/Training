@@ -16,17 +16,7 @@
     background: -moz-linear-gradient(-45deg, #a28997 0%, #9551c6 100%);
     background: -webkit-linear-gradient(-45deg, #a28997 0%, #9551c6 100%);
     background: linear-gradient(135deg, #a28997 0%, #9551c6 100%);
-    color: whitesmoke;
-}
-.card-body{
-    background: #a28997;
-    background: -moz-linear-gradient(-45deg, #a28997 0%, #9551c6 100%);
-    background: -webkit-linear-gradient(-45deg, #a28997 0%, #9551c6 100%);
-    background: linear-gradient(135deg, #a28997 0%, #9551c6 100%);
-    color: whitesmoke;
-}
-table{
-    color: whitesmoke;
+    /* color: whitesmoke; */
 }
 
 .simplebar-content{
@@ -34,9 +24,12 @@ table{
 }
 .sidebar-link, a.sidebar-link{
     background-color: rgb(49, 115, 117) !important;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     font-size: 20px !important;
 }
 .sidebar-brand {
     font-size: 30px !important;
+}
+#color{
+    color: whitesmoke;
 }

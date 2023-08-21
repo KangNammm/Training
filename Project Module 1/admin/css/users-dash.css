@@ -3,7 +3,7 @@
 }
 .sidebar-link, a.sidebar-link{
     background-color: rgb(49, 115, 117) !important;
-    color: whitesmoke;
+    /* color: whitesmoke; */
     font-size: 20px !important;
 }
 .sidebar-brand {
